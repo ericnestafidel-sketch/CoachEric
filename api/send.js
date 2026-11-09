@@ -7,7 +7,7 @@
  *   FROM_EMAIL      optional sender; defaults to onboarding@resend.dev
  */
 
-const TO = "ohair1203@gmail.com";
+const TO = "ericnestafidel@gmail.com";
 const DEFAULT_FROM = "onboarding@resend.dev";
 
 const FOCUS = new Set([
