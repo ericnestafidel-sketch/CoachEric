@@ -12,7 +12,7 @@ Apparel links point to the Cleats & Calluses shop on Etsy: [https://www.etsy.com
 
 The lesson request form and the contact form POST JSON to `/api/send`. The function checks the fields, drops submissions that fill the hidden honeypot, and sends plain text through the [Resend](https://resend.com) HTTP API.
 
-- To: ohair1203@gmail.com
+- To: ericnestafidel@gmail.com
 - Reply-To: the email address entered on the form
 - From: `onboarding@resend.dev`, or `FROM_EMAIL` when that variable is set
 
