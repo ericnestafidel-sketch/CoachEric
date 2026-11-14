@@ -534,12 +534,12 @@ footer a { color: var(--white); }
 <span class="burger" aria-hidden="true"></span>
 </button>
 <ul id="site-nav">
-<li><a href="https://www.etsy.com/shop/CleatsAndCalluses" target="_blank" rel="noopener">Shop<span class="sr-only"> (opens in a new tab)</span></a></li>
 <li><a href="practice.html">Practice Ideas</a></li>
 <li><a href="plans.html">Practice Plans</a></li>
 <li><a href="videos.html">Videos</a></li>
 <li><a href="#lessons">Private Lessons</a></li>
 <li><a href="https://player-pool.net" target="_blank" rel="noopener">Player Pool<span class="sr-only"> (opens in a new tab)</span></a></li>
+<li><a href="https://www.etsy.com/shop/CleatsAndCalluses" target="_blank" rel="noopener">Shop<span class="sr-only"> (opens in a new tab)</span></a></li>
 <li><a href="faq.html">FAQ</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
@@ -601,6 +601,80 @@ footer a { color: var(--white); }
 </section>
 
 
+<section id="player-pool" class="band">
+<div class="wrap">
+<h2>Looking for a Travel Team?</h2>
+<p class="intro">Player Pool is a private marketplace for travel baseball. Parents list their player — as a Player #, with no names or contact info shown — and hand-approved travel coaches search by age, position, level, state and county, and pickup availability.</p>
+<p class="intro">The first 100 players in Indiana, Illinois, and Ohio get their first season free. After that, parents pay $25 a season or $60 a year, and coaches search free.</p>
+<a class="btn" href="https://player-pool.net" target="_blank" rel="noopener">Visit Player Pool<span class="sr-only"> (opens in a new tab)</span></a>
+<p class="intro" style="margin-top:1rem">Player Pool is a separate business run by Coach Eric LLC.</p>
+</div>
+</section>
+<section id="lessons" class="band">
+<div class="wrap">
+<h2>Private Lessons</h2>
+<p class="intro">One-on-one and small-group lessons for youth players covering hitting, fielding, throwing, and baseball fundamentals. Each session fits the player's age and skill level. Lessons and apparel are offered by Coach Eric LLC.</p>
+<h3>Lesson Pricing</h3>
+<ul class="prices">
+<li><strong>30 minutes:</strong> $30</li>
+<li><strong>60 minutes:</strong> $50</li>
+<li><strong>4-lesson pack (60 min each):</strong> $180</li>
+</ul>
+<div class="card lesson-card">
+<h3>Request a Lesson</h3>
+<p>Fill this out and send it. I'll reply by email to confirm a time.</p>
+<form id="lessonForm" data-form="lesson" method="post" action="#lessons">
+<label for="lesson-parent">Parent/guardian name
+<input id="lesson-parent" name="parent" autocomplete="name" placeholder="Parent/guardian name" required>
+</label>
+<label for="lesson-email">Your email
+<input id="lesson-email" name="email" type="email" autocomplete="email" placeholder="Your email" required>
+</label>
+<label for="lesson-phone">Phone <span class="optional">(optional)</span>
+<input id="lesson-phone" name="phone" type="tel" autocomplete="tel" placeholder="Phone (optional)">
+</label>
+<label for="lesson-player">Player name
+<input id="lesson-player" name="player" autocomplete="off" placeholder="Player name" required>
+</label>
+<label for="lesson-age">Player age
+<input id="lesson-age" name="age" autocomplete="off" placeholder="Player age" required>
+</label>
+<label for="lesson-focus">What should we work on?
+<select id="lesson-focus" name="focus" required>
+<option value="">What should we work on?</option>
+<option>Hitting</option>
+<option>Fielding</option>
+<option>Throwing</option>
+<option>Pitching</option>
+<option>Catching</option>
+<option>General skills</option>
+</select>
+</label>
+<label for="lesson-length">Session length
+<select id="lesson-length" name="length" required>
+<option value="">Session length</option>
+<option>30 minutes</option>
+<option>60 minutes</option>
+</select>
+</label>
+<label for="lesson-times">Preferred days and times
+<input id="lesson-times" name="times" autocomplete="off" placeholder="Preferred days and times" required>
+</label>
+<label for="lesson-notes">Anything else I should know? <span class="optional">(optional)</span>
+<textarea id="lesson-notes" name="notes" rows="3" placeholder="Anything else I should know?"></textarea>
+</label>
+<div class="hp" aria-hidden="true">
+<label for="lesson-leave">Leave this field blank
+<input id="lesson-leave" name="leave_blank" tabindex="-1" autocomplete="off">
+</label>
+</div>
+<button class="btn" type="submit">Send Lesson Request</button>
+</form>
+<p id="lesson-status" class="form-status" role="status" aria-live="polite"></p>
+<p class="note">If the form cannot send from the site, your email app opens with the request filled in, ready to send.</p>
+</div>
+</div>
+</section>
 <section id="shop">
 <div class="wrap">
 <h2>Shop Apparel</h2>
@@ -668,82 +742,8 @@ footer a { color: var(--white); }
 
 
 
-<section id="lessons" class="band">
-<div class="wrap">
-<h2>Private Lessons</h2>
-<p class="intro">One-on-one and small-group lessons for youth players covering hitting, fielding, throwing, and baseball fundamentals. Each session fits the player's age and skill level. Lessons and apparel are offered by Coach Eric LLC.</p>
-<h3>Lesson Pricing</h3>
-<ul class="prices">
-<li><strong>30 minutes:</strong> $30</li>
-<li><strong>60 minutes:</strong> $50</li>
-<li><strong>4-lesson pack (60 min each):</strong> $180</li>
-</ul>
-<div class="card lesson-card">
-<h3>Request a Lesson</h3>
-<p>Fill this out and send it. I'll reply by email to confirm a time.</p>
-<form id="lessonForm" data-form="lesson" method="post" action="#lessons">
-<label for="lesson-parent">Parent/guardian name
-<input id="lesson-parent" name="parent" autocomplete="name" placeholder="Parent/guardian name" required>
-</label>
-<label for="lesson-email">Your email
-<input id="lesson-email" name="email" type="email" autocomplete="email" placeholder="Your email" required>
-</label>
-<label for="lesson-phone">Phone <span class="optional">(optional)</span>
-<input id="lesson-phone" name="phone" type="tel" autocomplete="tel" placeholder="Phone (optional)">
-</label>
-<label for="lesson-player">Player name
-<input id="lesson-player" name="player" autocomplete="off" placeholder="Player name" required>
-</label>
-<label for="lesson-age">Player age
-<input id="lesson-age" name="age" autocomplete="off" placeholder="Player age" required>
-</label>
-<label for="lesson-focus">What should we work on?
-<select id="lesson-focus" name="focus" required>
-<option value="">What should we work on?</option>
-<option>Hitting</option>
-<option>Fielding</option>
-<option>Throwing</option>
-<option>Pitching</option>
-<option>Catching</option>
-<option>General skills</option>
-</select>
-</label>
-<label for="lesson-length">Session length
-<select id="lesson-length" name="length" required>
-<option value="">Session length</option>
-<option>30 minutes</option>
-<option>60 minutes</option>
-</select>
-</label>
-<label for="lesson-times">Preferred days and times
-<input id="lesson-times" name="times" autocomplete="off" placeholder="Preferred days and times" required>
-</label>
-<label for="lesson-notes">Anything else I should know? <span class="optional">(optional)</span>
-<textarea id="lesson-notes" name="notes" rows="3" placeholder="Anything else I should know?"></textarea>
-</label>
-<div class="hp" aria-hidden="true">
-<label for="lesson-leave">Leave this field blank
-<input id="lesson-leave" name="leave_blank" tabindex="-1" autocomplete="off">
-</label>
-</div>
-<button class="btn" type="submit">Send Lesson Request</button>
-</form>
-<p id="lesson-status" class="form-status" role="status" aria-live="polite"></p>
-<p class="note">If the form cannot send from the site, your email app opens with the request filled in, ready to send.</p>
-</div>
-</div>
-</section>
 
 
-<section id="player-pool" class="band">
-<div class="wrap">
-<h2>Looking for a Travel Team?</h2>
-<p class="intro">Player Pool is a private marketplace for travel baseball. Parents list their player — as a Player #, with no names or contact info shown — and hand-approved travel coaches search by age, position, level, state and county, and pickup availability.</p>
-<p class="intro">The first 100 players in Indiana, Illinois, and Ohio get their first season free. After that, parents pay $25 a season or $60 a year, and coaches search free.</p>
-<a class="btn" href="https://player-pool.net" target="_blank" rel="noopener">Visit Player Pool<span class="sr-only"> (opens in a new tab)</span></a>
-<p class="intro" style="margin-top:1rem">Player Pool is a separate business run by Coach Eric LLC.</p>
-</div>
-</section>
 
 <section id="contact" class="band">
 <div class="wrap">
