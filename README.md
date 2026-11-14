@@ -2,7 +2,7 @@
 
 Live site for Eric O'Hair: [https://coacheric.vercel.app](https://coacheric.vercel.app)
 
-Static page (`index.html` and `coach.jpg`) plus a Node serverless function at `api/send.js`. Deploy with the Vercel project `coacheric`. The page does not need a build step.
+Static pages (`index.html`, `practice.html`, `plans.html`, `videos.html`, `faq.html`, and `coach.jpg`) plus a Node serverless function at `api/send.js`. Deploy with the Vercel project `coacheric`. The pages do not need a build step.
 
 ## Shop
 
