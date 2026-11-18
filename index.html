@@ -679,7 +679,7 @@ footer a { color: var(--white); }
 <section id="christmas-gifts">
 <div class="wrap">
 <h2>Christmas Gifts</h2>
-<p class="intro">Baseball Christmas gifts from the Cleats &amp; Calluses shop on Etsy — order by December 15 for Christmas delivery. Every order is printed to order in the US.</p>
+<p class="intro">Baseball Christmas gifts from the Cleats &amp; Calluses shop on Etsy — order by December 6 for Christmas delivery. Every order is printed to order in the US.</p>
 <div class="grid">
 <article class="card">
 <a href="https://www.etsy.com/listing/4617202992/santa-baseball-christmas-sweater-funny" target="_blank" rel="noopener"><img class="shop-img" src="images/shop-sweater-santa.jpg" alt="Forest Green Santa pitching Christmas baseball sweater" loading="lazy"></a>
@@ -980,10 +980,10 @@ footer a { color: var(--white); }
 </script>
 <script>
 // Christmas gift guide: remove the section and its nav link after the
-// December 15, 2026 Christmas shipping cutoff, so it disappears on its own
+// December 6, 2026 Christmas shipping cutoff, so it disappears on its own
 // even if nobody deploys a removal.
 (function () {
-  var cutoff = new Date(2026, 11, 15, 23, 59, 59);
+  var cutoff = new Date(2026, 11, 6, 23, 59, 59);
   if (new Date() > cutoff) {
     var section = document.getElementById("christmas-gifts");
     if (section) section.remove();
