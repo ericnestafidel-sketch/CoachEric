@@ -543,7 +543,7 @@ footer a { color: var(--white); }
 <div class="wrap">
 <h2>Practice Ideas</h2>
 <p class="intro">A bucket of balls, a glove, and a small group are enough for these. Speed Ball is the featured end-of-practice game. The cards under it are everyday drills for hitting, fielding, throwing, and baserunning.</p>
-<article class="card" style="margin-bottom:1rem;border-left:6px solid var(--red)"><span class="tag">End-of-Practice Drill</span> <span class="tag" style="background:var(--navy)">Hitting &middot; Baserunning &middot; Fielding &middot; Game Situations</span>
+<article class="card" id="speed-ball" style="margin-bottom:1rem;border-left:6px solid var(--red)"><span class="tag">End-of-Practice Drill</span> <span class="tag" style="background:var(--navy)">Hitting &middot; Baserunning &middot; Fielding &middot; Game Situations</span>
 <h3>Speed Ball</h3>
 <p>A timed, fast-paced game for the last 15 to 25 minutes of practice, best for ages 8 and up. Every player gets lots of at-bats and fielding chances, runs the bases live, and reacts to real game situations, all while having fun.</p>
 <p><strong>Setup:</strong> Split the team into 3 groups of 3 to 5 players: <strong>Hitters</strong>, <strong>Infield</strong>, and <strong>Outfield</strong>. A coach pitches (or use a tee or soft toss for younger players). A coach or a net can catch.</p>
@@ -570,7 +570,7 @@ footer a { color: var(--white); }
 <button class="filter" type="button" data-filter="baserunning" aria-pressed="false">Baserunning</button>
 </div>
 <div class="drills" id="drill-list">
-<article class="card drill" data-skill="hitting">
+<article class="card drill" id="drill-tee-contact" data-skill="hitting">
 <div class="meta"><span class="tag">Hitting</span><span class="age">Suggested ages 6-12</span></div>
 <h3>Tee Contact Progression</h3>
 <h4>Setup and equipment</h4>
@@ -589,7 +589,7 @@ footer a { color: var(--white); }
 <li>Say the location before the swing so the hitter has a plan.</li>
 </ul>
 </article>
-<article class="card drill" data-skill="hitting">
+<article class="card drill" id="drill-soft-toss" data-skill="hitting">
 <div class="meta"><span class="tag">Hitting</span><span class="age">Suggested ages 7-14</span></div>
 <h3>Soft-Toss Progression</h3>
 <h4>Setup and equipment</h4>
@@ -608,7 +608,7 @@ footer a { color: var(--white); }
 <li>A shorter, on-time swing comes before harder contact.</li>
 </ul>
 </article>
-<article class="card drill" data-skill="fielding">
+<article class="card drill" id="drill-short-hop" data-skill="fielding">
 <div class="meta"><span class="tag">Fielding</span><span class="age">Suggested ages 8-14</span></div>
 <h3>Short-Hop Fielding</h3>
 <h4>Setup and equipment</h4>
@@ -627,7 +627,7 @@ footer a { color: var(--white); }
 <li>Watch the hop into the glove, then find the target for the throw.</li>
 </ul>
 </article>
-<article class="card drill" data-skill="fielding">
+<article class="card drill" id="drill-relay-cutoff" data-skill="fielding">
 <div class="meta"><span class="tag">Fielding</span><span class="age">Suggested ages 9-14</span></div>
 <h3>Relay and Cutoff</h3>
 <h4>Setup and equipment</h4>
@@ -646,7 +646,7 @@ footer a { color: var(--white); }
 <li>A throw the next player can catch is the right throw.</li>
 </ul>
 </article>
-<article class="card drill" data-skill="throwing">
+<article class="card drill" id="drill-four-corner" data-skill="throwing">
 <div class="meta"><span class="tag">Throwing</span><span class="age">Suggested ages 7-14</span></div>
 <h3>Four-Corner Throwing</h3>
 <h4>Setup and equipment</h4>
@@ -665,7 +665,7 @@ footer a { color: var(--white); }
 <li>Shorten the distance if the ball is bouncing there. Accuracy first, then a longer throw.</li>
 </ul>
 </article>
-<article class="card drill" data-skill="throwing">
+<article class="card drill" id="drill-long-toss" data-skill="throwing">
 <div class="meta"><span class="tag">Throwing</span><span class="age">Suggested ages 9-14</span></div>
 <h3>Partner Long Toss</h3>
 <h4>Setup and equipment</h4>
@@ -684,7 +684,7 @@ footer a { color: var(--white); }
 <li>Pair players who can catch each other. A ball in the dirt every throw is not the drill.</li>
 </ul>
 </article>
-<article class="card drill" data-skill="baserunning">
+<article class="card drill" id="drill-base-running" data-skill="baserunning">
 <div class="meta"><span class="tag">Baserunning</span><span class="age">Suggested ages 8-14</span></div>
 <h3>Base-Running Reads</h3>
 <h4>Setup and equipment</h4>
@@ -703,7 +703,7 @@ footer a { color: var(--white); }
 <li>Get back to the bag on a line. A wide loop is an easy tag.</li>
 </ul>
 </article>
-<article class="card drill" data-skill="fielding">
+<article class="card drill" id="drill-first-step" data-skill="fielding">
 <div class="meta"><span class="tag">Fielding</span><span class="age">Suggested ages 7-13</span></div>
 <h3>First-Step Ground Balls</h3>
 <h4>Setup and equipment</h4>
