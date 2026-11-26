@@ -529,7 +529,7 @@ footer a { color: var(--white); }
 <li><a href="practice.html">Practice Ideas</a></li>
 <li><a href="plans.html">Practice Plans</a></li>
 <li><a href="videos.html">Videos</a></li>
-<li><a href="index.html#lessons">Private Lessons</a></li>
+<li><a onclick="if(window.va){va('event',{name:'Lessons link clicked'})}" href="index.html#lessons">Private Lessons</a></li>
 <li><a href="https://player-pool.net" target="_blank" rel="noopener">Player Pool<span class="sr-only"> (opens in a new tab)</span></a></li>
 <li><a href="https://www.etsy.com/shop/CleatsAndCalluses" target="_blank" rel="noopener">Shop<span class="sr-only"> (opens in a new tab)</span></a></li>
 <li><a href="faq.html">FAQ</a></li>
@@ -628,5 +628,9 @@ var toggle = document.querySelector(".nav-toggle");
   if (desktop.addEventListener) desktop.addEventListener("change", onDesktop);
 })();
 </script>
+<script>
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
